@@ -1,17 +1,28 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inconsolata, Open_Sans } from 'next/font/google'
+import './globals.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ["latin"] });
+const inconsolata = Inconsolata({ subsets: ['latin'] })
+const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Chatka pod Jodłami",
-  description: "Chatka pod Jodłami - urokliwy domek w sercu gór, idealny na spokojny odpoczynek wśród majestatycznych jodeł. Zapraszamy na niezapomniane wakacje!",
-};
+	title: 'Chatka pod Jodłami',
+	description:
+		'Chatka pod Jodłami - urokliwy domek w sercu gór, idealny na spokojny odpoczynek wśród majestatycznych jodeł. Zapraszamy na niezapomniane wakacje!',
+}
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="pl">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang='pl'>
+     
+			<body className={inconsolata.className}>
+      <Header/>
+        
+        {children}
+        
+        <Footer/>
+        </body>
+		</html>
+	)
 }
