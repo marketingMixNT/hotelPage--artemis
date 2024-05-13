@@ -1,6 +1,8 @@
 import Navbar from './nav/Navbar'
 
 import Marquee from 'react-fast-marquee'
+import MarqueeItem from './MarqueeItem'
+import Link from 'next/link'
 
 export default function Header() {
 	return (
@@ -8,25 +10,25 @@ export default function Header() {
 			<div>
 				{/*MARQUEE*/}
 				<Marquee autoFill='true' pauseOnHover='true' className='border-b py-3 text-xs text-white'>
-					<span className='mr-16'>Find Clarity</span>
-					<span className='mr-16'>Find Meaning</span>
-					<span className='mr-16'>Find New Beginings</span>
-					<span className='mr-16'>Find Pause</span>
-					<span className='mr-16'>Find Bliss</span>
-					<span className='mr-16'>Find Joy</span>
+					<MarqueeItem>Znajdź jasność</MarqueeItem>
+					<MarqueeItem>Znajdź sens</MarqueeItem>
+					<MarqueeItem>Znajdź nowy początek</MarqueeItem>
+					<MarqueeItem>Znajdź odpoczynek</MarqueeItem>
+					<MarqueeItem>Znajdź rozkosz</MarqueeItem>
+					<MarqueeItem>Znajdź radość</MarqueeItem>
 				</Marquee>
 				{/*NAV*/}
 				<Navbar />
 			</div>
 
 			<h1 className='text-5xl sm:text-6xl text-center font-extralight text-white px-6'>
-				A remedy
-				<span className='ml-5 font-normal'>to the noise.</span>
+				Remedium
+				<span className='ml-5 font-normal'>na hałas.</span>
 			</h1>
-			<div className='px-6 mx-auto'>
-				<button className='mb-16 border border-dotted text-white px-12 py-2 rounded-full uppercase font-light bg-transparent hover:bg-secondary duration-500'>
+			<div className='mx-auto px-6 pb-16'>
+				<a href='#' className='link-btn'>
 					Zarezerwuj swój wypoczynek
-				</button>
+				</a>
 			</div>
 		</header>
 	)

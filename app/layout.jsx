@@ -9,19 +9,17 @@ export const metadata = {
 	title: 'Chatka pod Jodłami',
 	description:
 		'Chatka pod Jodłami - urokliwy domek w sercu gór, idealny na spokojny odpoczynek wśród majestatycznych jodeł. Zapraszamy na niezapomniane wakacje!',
+	
 }
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='pl'>
-     
 			<body className={inconsolata.className}>
-     
-        
-        {children}
-        
-        <Footer/>
-        </body>
+				{children}
+
+				<Footer />
+			</body>
 		</html>
 	)
 }

@@ -1,11 +1,13 @@
 'use client'
 
-import React from 'react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-import MobileNavItem from './NavItemMobile'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { motion } from 'framer-motion'
+
+import NavItemMobile from './NavItemMobile'
 
 export default function NavMenuMobile() {
 	const [openMenu, setOpenMenu] = useState(false)
@@ -27,38 +29,50 @@ export default function NavMenuMobile() {
 
 	return (
 		<>
-			<button onClick={() => setOpenMenu(true)} className='lg:hidden'>
-				<img src='/icons/hamburger.svg' alt='' className='w-12' />
+			{/* HAMBURGER */}
+			<button onClick={() => setOpenMenu(true)} className='lg:hidden' aria-label='otwórz menu'>
+				<Image src='/icons/hamburger.svg' alt='' width={48} height={48} className='w-12' />
 			</button>
-
+			{/* MOBILE MENU*/}
 			<motion.div
 				variants={menuVariants}
 				initial='hidden'
 				animate={openMenu ? 'show' : ''}
-				className='fixed inset-0 bg-secondary z-50 flex flex-col justify-between items-center py-8 px-4'>
-				<button onClick={() => setOpenMenu(false)} className='self-end'>
-					<img src='/icons/close.svg' alt='' className=' w-6' />
+				className='fixed inset-0 flex flex-col justify-between items-center py-8 px-4 bg-secondary z-50'>
+				{/* Close */}
+				<button onClick={() => setOpenMenu(false)} className='self-end' aria-label='zamknij menu'>
+					<Image src='/icons/close.svg' alt='' width={24} height={24} className=' w-6' />
 				</button>
-
+				{/* Title */}
 				<Link
 					href={'/'}
 					className='text-3xl sm:text-4xl font-thin text-white mt-1 lg:mt-0'
 					style={{ wordSpacing: '-10px' }}>
 					Chatka <span className=' ml-1 font-normal'>pod Jodłami</span>
 				</Link>
-
-				<ul className='flex flex-col justify-center  text-white text-3xl font-extralight w-full'>
-					<MobileNavItem onClick={()=>setOpenMenu(false)} href='#'>Zostań</MobileNavItem>
-					<MobileNavItem onClick={()=>setOpenMenu(false)} href='#'>Pracuj</MobileNavItem>
-					<MobileNavItem onClick={()=>setOpenMenu(false)} href='#'>Oczekiwania</MobileNavItem>
-					<MobileNavItem onClick={()=>setOpenMenu(false)} href='#'>About</MobileNavItem>
-					<MobileNavItem onClick={()=>setOpenMenu(false)} href='#'>Contact</MobileNavItem>
+				{/* Links */}
+				<ul className='flex flex-col justify-center w-full text-3xl font-extralight text-white  '>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+						Zostań
+					</NavItemMobile>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+						Pracuj
+					</NavItemMobile>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+						Oczekiwania
+					</NavItemMobile>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+						About
+					</NavItemMobile>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+						Contact
+					</NavItemMobile>
 				</ul>
-
-				<div className='px-6 mx-auto'>
-					<button className='mb-16 border border-dotted text-white px-12 py-2 rounded-full uppercase font-light bg-transparent hover:bg-secondary duration-500'>
-						Zarezerwuj swój wypoczynek
-					</button>
+				{/* Book */}
+				<div className='mb-4 mx-auto px-6 '>
+					<a href='#' className='link-btn'>
+						Zarezerwuj 
+					</a>
 				</div>
 			</motion.div>
 		</>

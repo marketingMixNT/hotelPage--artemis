@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.link-btn {
+	@apply px-12 py-3 bg-transparent font-light xs:text-lg text-white uppercase  border border-dotted rounded-full hover:bg-secondary duration-500;
+}
