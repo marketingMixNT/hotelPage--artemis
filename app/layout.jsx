@@ -1,6 +1,5 @@
 import { Inconsolata, Open_Sans } from 'next/font/google'
 import './globals.css'
-import Header from './components/Header'
 import Footer from './components/Footer'
 
 const inconsolata = Inconsolata({ subsets: ['latin'] })
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
 		<html lang='pl'>
      
 			<body className={inconsolata.className}>
-      <Header/>
+     
         
         {children}
         
