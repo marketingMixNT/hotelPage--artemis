@@ -52,20 +52,20 @@ export default function NavMenuMobile() {
 				</Link>
 				{/* Links */}
 				<ul className='flex flex-col justify-center w-full text-3xl font-extralight text-white  '>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
-						Zostań
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#wypoczynek'>
+						Wypoczynek
 					</NavItemMobile>
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
-						Pracuj
+						Praca zdalna
 					</NavItemMobile>
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
-						Oczekiwania
+						Prezentacja
 					</NavItemMobile>
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
-						About
+						O nas
 					</NavItemMobile>
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
-						Contact
+						Kontakt
 					</NavItemMobile>
 				</ul>
 				{/* Book */}

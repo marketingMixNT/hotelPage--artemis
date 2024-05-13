@@ -9,12 +9,13 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '390px',
+				max:'1920px'
 			},
 			fontFamily: {
 				secondary: ['Open Sans', 'sans-serif'],
 			},
 			colors: {
-				primary: '#123',
+				primary: '#fdf4db',
 				secondary: '#2b314f',
 			},
 		},

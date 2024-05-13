@@ -23,7 +23,7 @@ export default function Navbar() {
 
 			{/*NAV DESKTOP*/}
 			<ul className='hidden lg:flex justify-center items-center gap-12 xl:gap-20 text-white text-lg'>
-				<NavItemDesktop href='#'>Urlop</NavItemDesktop>
+				<NavItemDesktop href='/#wypoczynek'>Wypoczynek</NavItemDesktop>
 				<NavItemDesktop href='#'>Praca zdalna</NavItemDesktop>
 				<NavItemDesktop href='#'>Wygląd</NavItemDesktop>
 				<NavItemDesktop href='#'>O nas</NavItemDesktop>
