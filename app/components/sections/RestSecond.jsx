@@ -1,20 +1,18 @@
-import React from 'react'
+
 import Carousel from '../Carousel'
 
-export default function RemoteWork() {
+export default function Rest() {
 	return (
-		<section id='praca-zdalna' className=' '>
+		<section >
 			{/* CONTAINER */}
 			<div className='grid grid-cols-1 lg:grid-cols-5 gap-y-12 lg:gap-y-0 px-8 lg:px-20 py-20  h-full '>
-				{/* img */}
-				<div className=' lg:col-start-1 lg:col-end-4 xl:ml-6 py-6 2xl:py-12  max-h-[950px] mr-20 w-full lg:w-auto'>
-					<Carousel />
-				</div>
 				{/* text */}
-				<div className='lg:col-start-4 lg:col-end-6 flex flex-col items-center justify-between gap-8 lg:gap-0 ml-12 mr-20 max:mr-80'>
+				<div className='lg:col-span-2 2xl:col-span-1 flex flex-col justify-between gap-8 lg:gap-0'>
 					<div className='flex flex-col gap-8 lg:gap-12'>
 						<h2 className='text-lg font-light uppercase '>Nasze przesłanie</h2>
-						<p className='text-3xl'>An island of modern life in the middle of the natural world.</p>
+						<p className='text-3xl'>
+							Sanctuary is more than a weekend getaway — more than just a transient place to be outside.
+						</p>
 						<div>
 							<ul className='space-y-5'>
 								<li className='flex items-center gap-6'>
@@ -42,7 +40,14 @@ export default function RemoteWork() {
 						something we’ve for too long ignored.
 					</p>
 				</div>
+				{/* img */}
+				<div className=' lg:col-start-3 lg:col-end-6 xl:ml-6 py-6 2xl:py-12  max-h-[950px]'>
+					<Carousel/>
+				
+				</div>
 			</div>
+			
 		</section>
+		
 	)
 }

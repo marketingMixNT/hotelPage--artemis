@@ -14,6 +14,10 @@ body {
 	@apply px-12 py-3 bg-transparent font-light xs:text-lg text-white uppercase  border border-dotted rounded-full hover:bg-secondary duration-500;
 }
 
+.link-hover{
+	@apply border-b border-b-transparent hover:border-b hover:border-b-white duration-100
+}
+
 
 
 /* SWIPERS */

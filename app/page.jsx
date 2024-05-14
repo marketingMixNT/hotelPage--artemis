@@ -1,7 +1,8 @@
 import Header from './components/Header'
 import Rest from './components/sections/Rest'
-import RemoteWork from './components/sections/RemoteWork'
+import RestSecond from './components/sections/RestSecond'
 import HeroCarousel from './components/sections/HeroCarousel'
+import RemoteWork from './components/sections/RemoteWork'
 
 export default function Home() {
 	return (
@@ -9,8 +10,9 @@ export default function Home() {
 			<Header />
 			<main>
 				<Rest />
-				<RemoteWork />
+				<RestSecond />
 				<HeroCarousel />
+				<RemoteWork/>
 			</main>
 		</>
 	)
