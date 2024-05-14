@@ -55,16 +55,16 @@ export default function NavMenuMobile() {
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#wypoczynek'>
 						Wypoczynek
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#praca-zdalna'>
 						Praca zdalna
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#wyglad'>
 						Prezentacja
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#o-nas'>
 						O nas
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='#'>
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#kontakt'>
 						Kontakt
 					</NavItemMobile>
 				</ul>
