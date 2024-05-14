@@ -10,12 +10,27 @@ body {
 	@apply text-secondary bg-primary;
 }
 
+
+.wrapper{
+	@apply px-6 sm:px-12 md:px-20 py-10  md:py-20
+}
+
 .link-btn {
 	@apply px-12 py-3 bg-transparent font-light xs:text-lg text-white uppercase  border border-dotted rounded-full hover:bg-secondary duration-500;
+}
+.link-btn--dark {
+	@apply px-12 py-3 bg-transparent font-light  text-secondary uppercase  border border-secondary border-dotted   rounded-full hover:bg-secondary hover:text-white duration-500;
+}
+
+.btn-submit{
+		@apply px-12 py-3 bg-transparent font-light  text-white uppercase  border border-secondary bg-secondary border-dotted   rounded-full hover:bg-transparent hover:text-secondary hover:border-secondary duration-500;
 }
 
 .link-hover{
 	@apply border-b border-b-transparent hover:border-b hover:border-b-white duration-100
+}
+.link-hover--dark{
+	@apply border-b border-b-transparent hover:border-b hover:border-b-secondary duration-100
 }
 
 

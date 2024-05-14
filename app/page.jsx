@@ -5,6 +5,7 @@ import HeroCarousel from './components/sections/HeroCarousel'
 import RemoteWork from './components/sections/RemoteWork'
 import HeroImg from './components/sections/HeroImg'
 import About from './components/sections/About'
+import Contact from './components/sections/Contact'
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 				<RemoteWork/>
 				<HeroImg/>
 				<About/>
+				<Contact/>
 			</main>
 		</>
 	)
