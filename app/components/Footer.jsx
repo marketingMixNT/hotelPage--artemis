@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -8,14 +9,15 @@ export default function Footer() {
 			{/* FIRST COL */}
 			<div className='col-span-1'>
 				<div className='relative flex items-center justify-center'>
-					<img src='/text.png ' alt='' className='w-[60%] max:w-[70%] animate-spin-slow' />
-
-					<img src='/logo.png' alt='' className='absolute w-[25%] max:w-[22%]  ml-1' />
+					
+					<Link href="/">
+						<img src='/logo.png' alt='' className=' w-[25%] max:w-[55%]  ' />
+					</Link>
 				</div>
 			</div>
 
 			{/* SECOND COL */}
-			<div className='flex flex-col text-center xl:text-left mx-auto gap-4'>
+			<div className='flex flex-col items-start text-center xl:text-left mx-auto gap-4'>
 				<h2 className='uppercase'>Social Media</h2>
 				<a href='#' target='_blank' className='link-hover'>
 					Instagram
@@ -42,7 +44,7 @@ export default function Footer() {
 						kontakt@willanawzgorzu.pl
 					</a>
 					<a className='link-hover' href='tel:+48795314699'>
-					+48 795 314 699
+						+48 795 314 699
 					</a>
 				</div>
 			</div>
