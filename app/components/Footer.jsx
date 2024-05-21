@@ -8,34 +8,29 @@ export default function Footer() {
 			{/* FIRST COL */}
 			<div className='col-span-1'>
 				<div className='relative flex items-center justify-center'>
-					<img src='/text.png ' alt='' className='w-[60%] max:w-[40%] animate-spin-slow' />
+					<img src='/text.png ' alt='' className='w-[60%] max:w-[70%] animate-spin-slow' />
 
-					<img src='/logo.png' alt='' className='absolute w-[25%] max:w-[15%] mb-5' />
+					<img src='/logo.png' alt='' className='absolute w-[25%] max:w-[22%]  ml-1' />
 				</div>
 			</div>
 
 			{/* SECOND COL */}
 			<div className='flex flex-col text-center xl:text-left mx-auto gap-4'>
-				<h2 className='uppercase'>Follow</h2>
+				<h2 className='uppercase'>Social Media</h2>
 				<a href='#' target='_blank' className='link-hover'>
 					Instagram
 				</a>
 				<a href='#' target='_blank' className='link-hover'>
-					TikTok
-				</a>
-				<a href='#' target='_blank' className='link-hover'>
 					Facebook
-				</a>
-				<a href='#' target='_blank' className='link-hover'>
-					YouTube
 				</a>
 			</div>
 
 			{/* THIRD COL */}
 			<div className='flex flex-col  text-center xl:text-left mx-auto gap-4'>
-				<h2 className='uppercase'>Praca</h2>
-				<a className='link-hover' href='mailto:praca@chatkajodla.pl'>
-					praca@chatkajodla.pl
+				<h2 className='uppercase'>Adres</h2>
+				<a className='link-hover' href='#'>
+					Żywczańskie 22c <br />
+					34-500 Zakopane
 				</a>
 			</div>
 
@@ -43,21 +38,18 @@ export default function Footer() {
 			<div className='flex flex-col items-end '>
 				<div className='flex flex-col justify-center xl:justify-start items-center xl:items-start gap-4 '>
 					<h2 className='uppercase'>Kontakt</h2>
-					<a className='link-hover' href='mailto:kontakt@chatkajodla.pl'>
-						kontakt@chatkajodla.pl
+					<a className='link-hover' href='mailto:kontakt@willanawzgorzu.pl'>
+						kontakt@willanawzgorzu.pl
 					</a>
-					<a className='link-hover' href='mailto:rezerwacja@chatkajodla.pl'>
-						rezerwacja@chatkajodla.pl
-					</a>
-					<a className='link-hover' href='tel:+48876345733'>
-						+48 876-345-733
+					<a className='link-hover' href='tel:+48795314699'>
+					+48 795 314 699
 					</a>
 				</div>
 			</div>
 
 			{/* COPY */}
 			<div className='col-span-4 flex flex-col items-center  xl:items-end gap-4 mt-4'>
-				<span className='uppercase text-wrap text-center xs:text-left'>© Chatka pod Jodłami {currentYear}</span>
+				<span className='uppercase text-wrap text-center xs:text-left'>© Willa na Wzgórzu {currentYear}</span>
 				<a href='https://marketingmix.pl'>
 					<img src='/marketingmix.svg' alt='logo wykonawcy - MarketingMix.pl' className='w-28' />
 				</a>

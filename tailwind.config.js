@@ -9,7 +9,7 @@ module.exports = {
 		extend: {
 			screens: {
 				xs: '390px',
-				max: '1920px',
+				max: '1921px',
 			},
 			fontFamily: {
 				secondary: ['Open Sans', 'sans-serif'],
@@ -17,7 +17,7 @@ module.exports = {
 			colors: {
 				primary: '#fdf4db',
 				secondary: '#2b314f',
-				third: '#526742',
+				third: '#be9466',
 			},
 			animation: {
 				'spin-slow': 'spin 15s linear infinite',

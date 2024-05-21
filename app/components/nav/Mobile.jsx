@@ -38,7 +38,7 @@ export default function NavMenuMobile() {
 				variants={menuVariants}
 				initial='hidden'
 				animate={openMenu ? 'show' : ''}
-				className='fixed inset-0 flex flex-col justify-between items-center py-8 px-4 bg-secondary z-50'>
+				className='fixed inset-0 flex flex-col justify-between items-center py-8 px-4 bg-third z-50'>
 				{/* Close */}
 				<button onClick={() => setOpenMenu(false)} className='self-end' aria-label='zamknij menu'>
 					<Image src='/icons/close.svg' alt='' width={24} height={24} className=' w-6' />
@@ -48,18 +48,18 @@ export default function NavMenuMobile() {
 					href={'/'}
 					className='text-3xl sm:text-4xl font-thin text-white mt-1 lg:mt-0'
 					style={{ wordSpacing: '-10px' }}>
-					Chatka <span className=' ml-1 font-normal'>pod Jodłami</span>
+					Willa <span className=' ml-2 font-normal'>na <span className='ml-2'>Wzgórzu</span></span>
 				</Link>
 				{/* Links */}
 				<ul className='flex flex-col justify-center w-full text-3xl font-extralight text-white  '>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#wypoczynek'>
-						Wypoczynek
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#pokoje'>
+						Pokoje
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#praca-zdalna'>
-						Praca zdalna
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#okolica'>
+						Okolica
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#wyglad'>
-						Prezentacja
+					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#galeria'>
+						Galeria
 					</NavItemMobile>
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#o-nas'>
 						O nas

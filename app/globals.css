@@ -7,8 +7,22 @@ html {
 }
 
 body {
-	@apply text-secondary bg-primary;
+	@apply text-secondary bg-white;
 }
+
+
+.heading{
+	@apply text-3xl md:text-4xl lg:text-3xl 2xl:text-5xl font-black uppercase
+}
+
+.text{
+	@apply text-base md:text-xl 2xl:text-2xl max:text-3xl font-light
+}
+
+.text--small{
+	@apply text-base md:text-lg lg:text-base 2xl:text-lg max:text-xl
+}
+
 
 
 .wrapper{
@@ -19,11 +33,11 @@ body {
 	@apply px-12 py-3 bg-transparent font-light xs:text-lg text-white uppercase  border border-dotted rounded-full hover:bg-secondary duration-500;
 }
 .link-btn--dark {
-	@apply px-12 py-3 bg-transparent font-light  text-secondary uppercase  border border-secondary border-dotted   rounded-full hover:bg-secondary hover:text-white duration-500;
+	@apply px-12 py-3 bg-transparent font-light  text-secondary uppercase  border border-secondary border-dotted   rounded-full hover:bg-third hover:text-white duration-500;
 }
 
 .btn-submit{
-		@apply px-12 py-3 bg-transparent font-light  text-white uppercase  border border-secondary bg-secondary border-dotted   rounded-full hover:bg-transparent hover:text-secondary hover:border-secondary duration-500;
+		@apply px-12 py-3 bg-transparent font-light  text-white uppercase  border border-secondary bg-third border-dotted   rounded-full hover:bg-transparent hover:text-secondary hover:border-secondary duration-500;
 }
 
 .link-hover{

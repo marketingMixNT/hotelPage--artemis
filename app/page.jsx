@@ -1,10 +1,9 @@
 import Header from './components/Header'
-import Rest from './components/sections/Rest'
-import RestSecond from './components/sections/RestSecond'
+import Rooms from './components/sections/Rooms'
+import RoomsSecond from './components/sections/RoomsSecond'
 import HeroCarousel from './components/sections/HeroCarousel'
-import RemoteWork from './components/sections/RemoteWork'
+import Outdoor from './components/sections/Outdoor'
 import HeroImg from './components/sections/HeroImg'
-import About from './components/sections/About'
 import Contact from './components/sections/Contact'
 
 export default function Home() {
@@ -12,12 +11,12 @@ export default function Home() {
 		<>
 			<Header />
 			<main>
-				<Rest />
-				<RestSecond />
+				<Rooms />
+				<RoomsSecond />
 				<HeroCarousel />
-				<RemoteWork/>
+				<Outdoor/>
 				<HeroImg/>
-				<About/>
+			
 				<Contact/>
 			</main>
 		</>

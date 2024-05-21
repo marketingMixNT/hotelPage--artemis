@@ -1,21 +1,21 @@
-import { Inconsolata, Open_Sans } from 'next/font/google'
+import { Montserrat, Open_Sans } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer'
 
-const inconsolata = Inconsolata({ subsets: ['latin'] })
+const playfairdisplay = Montserrat({ subsets: ['latin'],weight:'300' })
 const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Chatka pod Jodłami',
+	title: 'Willa na Wzgórzu',
 	description:
-		'Chatka pod Jodłami - urokliwy domek w sercu gór, idealny na spokojny odpoczynek wśród majestatycznych jodeł. Zapraszamy na niezapomniane wakacje!',
+		'Willa na Wzgórzu: komfortowe pokoje w Zakopanem, blisko szlaków górskich. Ciesz się spokojem, ogrodem i wygodą, z centrum w zasięgu spaceru.',
 	
 }
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='pl'>
-			<body className={inconsolata.className}>
+			<body className={playfairdisplay.className}>
 				{children}
 
 				<Footer />
