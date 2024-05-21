@@ -10,7 +10,7 @@ import { FreeMode } from 'swiper/modules'
 
 export default function App() {
 	return (
-		<section id='galeria' className='xl:py-20'>
+		<section id='galeria' className=' py-10 2xl:py-20'>
 			<Swiper
 				slidesPerView={1}
 				breakpoints={{

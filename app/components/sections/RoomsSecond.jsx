@@ -8,14 +8,14 @@ function RoomsSecond() {
 
 	<section
 		id='pokoje'
-		className=' lg:h-[95vh]  max:h-[80vh] 2xl:mb-20 px-10 lg:px-16 max:px-12  lg:pt-20 pb-10 md:pb-20 lg:pb-0 2xl:pb-10 lg:py-10 2xl:py-20   '>
+		className=' lg:h-[95vh]  max:h-[80vh] 2xl:mb-20 px-6  lg:px-16 max:px-12  py-10   '>
 
 
 		{/* container */}
 		<div className='flex flex-col lg:flex-row justify-between  h-full gap-8 md:gap-12 lg:gap-16 2xl:gap-32 '>
 			{/* text */}
 
-			<div className='flex flex-col justify-between gap-8 md:gap-16 lg:gap-12 w-full lg:w-[45%] order-1'>
+			<div className='flex flex-col justify-between gap-8 md:gap-16 lg:gap-12 w-full lg:w-[45%] lg:order-1'>
 				<div className='space-y-12'>
 					<h2 className='heading'>Doskonała Lokalizacja</h2>
 					<p className='text'>
