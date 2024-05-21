@@ -46,9 +46,8 @@ export default function NavMenuMobile() {
 				{/* Title */}
 				<Link
 					href={'/'}
-					className='text-3xl sm:text-4xl font-thin text-white mt-1 lg:mt-0'
-					style={{ wordSpacing: '-10px' }}>
-					Willa <span className=' ml-2 font-normal'>na <span className='ml-2'>Wzgórzu</span></span>
+				>
+					<img src="/logo--white.png" alt="" className='w-40 md:w-64'/>
 				</Link>
 				{/* Links */}
 				<ul className='flex flex-col justify-center w-full text-3xl font-extralight text-white  '>
@@ -58,19 +57,14 @@ export default function NavMenuMobile() {
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#okolica'>
 						Okolica
 					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#galeria'>
-						Galeria
-					</NavItemMobile>
-					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#o-nas'>
-						O nas
-					</NavItemMobile>
+					
 					<NavItemMobile onClick={() => setOpenMenu(false)} href='/#kontakt'>
 						Kontakt
 					</NavItemMobile>
 				</ul>
 				{/* Book */}
 				<div className='mb-4 mx-auto px-6 '>
-					<a href='#' className='link-btn'>
+					<a href='https://www.booking.com/hotel/pl/willa-pracus.pl.html' className='link-btn'>
 						Zarezerwuj 
 					</a>
 				</div>

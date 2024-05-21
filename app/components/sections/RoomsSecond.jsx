@@ -7,7 +7,7 @@ function RoomsSecond() {
 	
 
 	<section
-		id='pokoje'
+		
 		className=' lg:h-[95vh]  max:h-[80vh] 2xl:mb-20 px-6  lg:px-16 max:px-12  py-10   '>
 
 

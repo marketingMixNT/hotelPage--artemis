@@ -34,7 +34,7 @@ export default function Contact() {
 	}
 
 	return (
-		<section className='px-6 sm:px-12 md:px-20 py-10  md:py-20 '>
+		<section id='kontakt' className='px-6 sm:px-12 md:px-20 py-10  md:py-20 '>
 			{/* CONTAINER */}
 			<div className='flex flex-col justify-center items-center lg:flex-row gap-12 lg:gap-0 '>
 				{/* img */}

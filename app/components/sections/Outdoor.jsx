@@ -33,7 +33,7 @@ import CarouselOutdoor from '../CarouselOutdoor'
 function Outdoor() {
 	return (
 		<section
-			id='pokoje'
+			id='okolica'
 			className=' lg:h-[95vh]  max:h-[80vh] 2xl:mb-20 px-10 lg:px-16 max:px-12  2xl:pb-10 md:py-10 2xl:py-20   '>
 			{/* container */}
 			<div className='flex flex-col lg:flex-row justify-between  h-full gap-8 md:gap-12 lg:gap-16 2xl:gap-32 max:gap-64'>
